@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-clifford: #da373d;
+          --font-canit: "Kanit", "serif";
+        }
+      </style>
+    <title>Document</title>
+</head>
+<body class="font-canit">
+    
+    <section>
+        <div class="container mx-auto">
+            <h2 class="text-[26px] font-medium text-[#252525] mt-[40px] mb-[18px] text-center" id="text">TODO LIST</h2>
+
+            <form action="" id="add__form" class="w-[70%] h-[50px] mx-auto flex items-center justify-between rounded-[10px]">
+                <div id="wrapper" class="border-[2px] border-blue-900 w-[70%] py-[12px] px-[16px] rounded-[10px] flex items-center justify-between">
+                    <input type="text" placeholder="Search note..." class="text-[16px] w-[90%] outline-none" id="search__input">
+
+                    <i class="fa-solid fa-magnifying-glass text-[22px] text-[#6C63FF]"></i>
+                </div>
+
+                <button type="submit" class="py-[14px] px-[20px] bg-[#6C63FF] w-[15%] h-[50px] text-[18px] text-white rounded-[10px] flex items-center justify-center">SEND</button>
+
+                <button class="w-[10%] h-[50px] bg-[#6C63FF] rounded-[10px] flex items-center justify-center" id="change__item">
+                    <i class="fa-regular fa-moon text-[22px] text-white"></i>
+                </button>
+            </form>
+
+            <ul class="w-[50%] mx-auto mt-[40px]" id="note__list">
+                <li class="w-full py-[16px] border-b-[2px] border-[#6C63FF] flex items-center justify-between">
+                    <input type="checkbox" class="w-[26px] h-[26px] rounded-[5px] border-[2px] border-[#6C63FF] uzgacha">
+                    <p class="w-[88%] text-[20px]">
+                        NOTE #<span>1</span>
+                    </p>
+                    
+                        <img src="./images/Vector.svg" alt="" class="w-[20px] h-[20px]">
+                                    
+                        <img src="./images/trash-svgrepo-com 1.svg" alt="" class="w-[20px] h-[20px]">
+    
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+
+</body>
+</html>
